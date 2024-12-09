@@ -10,7 +10,11 @@
             margin: 0;
             padding: 0;
             height: 200vh;
-            overflow: hidden;
+            background-image: url('background.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed; /* This keeps the background fixed */
+            background-position: center;
             font-family: 'Montserrat Alternates', sans-serif;
         }
         body::before {
@@ -20,6 +24,7 @@
             left: 0;
             right: 0;
             bottom: 0;
+            height: 100%;
             background-image: url('background.png');
             background-repeat: no-repeat;
             background-size: cover;
@@ -76,14 +81,30 @@
         } */
         .body-container{
             margin: 10%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
         }
         .sponsor-container{
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10vw;
+            min-width: 500px;
+            min-height: 250px;
+            background-color: rgba(217, 217, 217, 0.65);
+            border-radius: 10%;
+            align-items: center;
+            text-align: center;
+            margin: 10%;
         }
         .sponsor{
             width: 100%;
+        }
+        a{
+            padding-bottom: 25%;
+            color: rgb(171, 0, 0);
+            font-size: 50px;
+        }
+        .sponsor img{
+            width: 250px;
+            height: 150px;
+            margin: 1;
         }
         .corner-img {
             position: fixed;
@@ -95,12 +116,8 @@
             width: 100px;
             height: 100px;
         }
-        a{
-            color: white;
-        }
-
-        @media (max-width: 600px){
-            .sponsor-container{
+        @media (max-width: 1200px){
+            .body-container{
                 grid-template-columns: 1fr;
             }
         }
@@ -129,24 +146,33 @@
             <div class="body-container">
                 <div class="sponsor-container">
                     <div class="sponsor">
-                        <a>sponsor 1</a>
-                        <!-- <img src="x" class="sponsor-img"> -->
+                        <a>Coffee Partner</a><br><br>
+                        <img src="coffee_partner_1.jpg" class="sponsor-img">
                     </div>
+                </div>
+                <div class="sponsor-container">
                     <div class="sponsor">
-                        <a>sponsor 1</a>
-                        <!-- <img src="x" class="sponsor-img"> -->
+                        <a>FnB Partner</a><br><br>
+                        <img src="FnB_Partner_1.png" class="sponsor-img">
                     </div>
+                </div>
+                <div class="sponsor-container">
                     <div class="sponsor">
-                        <a>sponsor 1</a>
-                        <!-- <img src="x" class="sponsor-img"> -->
+                        <a>Media Sponsor</a><br><br>
+                        <img src="media_partner_1.jpg" class="sponsor-img">
                     </div>
+                </div>
+                <div class="sponsor-container">
                     <div class="sponsor">
-                        <a>sponsor 1</a>
-                        <!-- <img src="x" class="sponsor-img"> -->
+                        <a>Event Sponsor</a><br><br>
+                        <img src="event_sponsor_1.png" class="sponsor-img">
+                        <img src="event_sponsor_2.webp" class="sponsor-img">
                     </div>
+                </div>
+                <div class="sponsor-container">
                     <div class="sponsor">
-                        <a>sponsor 1</a>
-                        <!-- <img src="x" class="sponsor-img"> -->
+                        <a>In Collaboration</a><br><br>
+                        <img src="in_collaboration.png" class="sponsor-img">
                     </div>
                 </div>
             </div>

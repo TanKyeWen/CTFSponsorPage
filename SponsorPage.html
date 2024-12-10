@@ -9,29 +9,13 @@
             position: relative;
             margin: 0;
             padding: 0;
-            height: 200vh;
+            height: 300vh;
             background-image: url('background.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed; /* This keeps the background fixed */
             background-position: center;
             font-family: 'Montserrat Alternates', sans-serif;
-        }
-        body::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            height: 100%;
-            background-image: url('background.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed; /* This keeps the background fixed */
-            background-position: center;
-            filter: blur(7.5px); /* This applies the blur effect */
-            z-index: -1; /* Ensures the background stays behind the content */
         }
         .fixed-background{
             position: relative;
@@ -81,6 +65,7 @@
         } */
         .body-container{
             margin: 10%;
+            justify-items: center;
         }
         .sponsor-container{
             min-width: 500px;
@@ -167,7 +152,7 @@
                 <div class="sponsor-container">
                     <div class="sponsor">
                         <a>Event Sponsor</a><br><br>
-                        <img src="event_sponsor_1.png" class="sponsor-img" style="height: 100px; width: 250px;">
+                        <img src="event_sponsor_1.png" class="sponsor-img" style="height: 200px; width: 350px;">
                         <img src="event_sponsor_2.webp" class="sponsor-img" style="height: 250px; width: 250px;">
                     </div>
                 </div>
